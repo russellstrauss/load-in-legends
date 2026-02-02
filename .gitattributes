@@ -1,0 +1,51 @@
+# =========================
+# Unity text serialization (DO NOT LFS)
+# =========================
+*.cs      text
+*.shader  text
+*.compute text
+*.cginc   text
+*.hlsl    text
+*.json    text
+*.xml     text
+*.txt     text
+*.md      text
+*.unity   text
+*.prefab  text
+*.asset   text
+*.mat     text
+*.meta    text
+*.anim    text
+*.controller text
+
+# =========================
+# Images / textures (LFS)
+# =========================
+*.psd filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+*.tga filter=lfs diff=lfs merge=lfs -text
+*.exr filter=lfs diff=lfs merge=lfs -text
+
+# =========================
+# 3D / models (LFS)
+# =========================
+*.fbx filter=lfs diff=lfs merge=lfs -text
+*.obj filter=lfs diff=lfs merge=lfs -text
+*.blend filter=lfs diff=lfs merge=lfs -text
+
+# =========================
+# Audio / video (LFS)
+# =========================
+*.wav filter=lfs diff=lfs merge=lfs -text
+*.mp3 filter=lfs diff=lfs merge=lfs -text
+*.ogg filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.mov filter=lfs diff=lfs merge=lfs -text
+
+# =========================
+# Large data / baked stuff (LFS)
+# =========================
+*.bytes filter=lfs diff=lfs merge=lfs -text
+*.assetbundle filter=lfs diff=lfs merge=lfs -text
