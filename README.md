@@ -69,6 +69,7 @@ Before cloning, you **must** install Git LFS:
 ```bash
 git lfs install
 git clone https://github.com/russellstrauss/load-in-legends.git
+```
 
 > ⚠️ **Do not download the ZIP from GitHub.**
 
