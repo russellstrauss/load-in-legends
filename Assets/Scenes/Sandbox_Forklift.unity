@@ -375,6 +375,7 @@ GameObject:
   - component: {fileID: 584266879}
   - component: {fileID: 584266878}
   - component: {fileID: 584266881}
+  - component: {fileID: 584266882}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -449,12 +450,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 584266877}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.29237175, y: 0, z: 0, w: 0.9563048}
+  m_LocalRotation: {x: 0.29237175, y: -0, z: -0, w: 0.9563048}
   m_LocalPosition: {x: 0, y: 2.5, z: -0.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1373071291}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 34, y: 0, z: 0}
 --- !u!114 &584266881
 MonoBehaviour:
@@ -500,6 +501,29 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &584266882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584266877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5e17072b6c79d14f8185480034b598a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OrbitCamera
+  target: {fileID: 1373071291}
+  targetOffset: {x: 0, y: 1.5, z: 0}
+  followTargetRotation: 1
+  mouseSensitivity: 0.2
+  minPitch: 5
+  maxPitch: 80
+  defaultPitch: 20
+  distance: 7
+  minDistance: 3
+  maxDistance: 15
+  zoomStep: 1
 --- !u!1 &736713066
 GameObject:
   m_ObjectHideFlags: 0
@@ -792,9 +816,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 446f9aed9eab21b458e6bb06711aeb3b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1524412053}
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 446f9aed9eab21b458e6bb06711aeb3b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 584266880}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 446f9aed9eab21b458e6bb06711aeb3b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1648258114}
@@ -1945,3 +1966,4 @@ SceneRoots:
   - {fileID: 1569494728}
   - {fileID: 1781923749}
   - {fileID: 6253668757160745969}
+  - {fileID: 584266880}
