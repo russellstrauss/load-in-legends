@@ -45,6 +45,17 @@ public class ForkliftController : MonoBehaviour
         moveAction?.Enable();
     }
 
+    void OnDisable()
+    {
+        // Park: cut power and hold the brakes when no one is driving.
+        frontLeft.motorTorque = 0f;
+        frontRight.motorTorque = 0f;
+        frontLeft.brakeTorque = brakeTorque;
+        frontRight.brakeTorque = brakeTorque;
+        rearLeft.brakeTorque = brakeTorque;
+        rearRight.brakeTorque = brakeTorque;
+    }
+
     // Physics code goes in FixedUpdate, which runs on Unity's fixed physics clock.
     void FixedUpdate()
     {

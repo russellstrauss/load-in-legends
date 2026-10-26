@@ -34,6 +34,14 @@ public class OrbitCamera : MonoBehaviour
 
     // LateUpdate runs after all movement for the frame,
     // so the camera always sees where the forklift ended up.
+
+    public void SetTarget(Transform newTarget, bool followRotation)
+    {
+        target = newTarget;
+        followTargetRotation = followRotation;
+        yaw = followRotation ? 0f : newTarget.eulerAngles.y;   // start behind the new target
+    }
+
     void LateUpdate()
     {
         if (target == null) return;
